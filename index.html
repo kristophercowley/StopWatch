@@ -1,0 +1,23 @@
+<html ng-app="stopwatch">
+
+<head>
+    <meta charset="UTF-8">
+    <title>StopWatch</title>
+</head>
+
+<body ng-controller="StopWatchController">
+    <h1>StopWatch</h1> {{1+1}} {{test}}
+    <br/> Display Count: {{displayCount }}
+    <button ng-click="inter()">Start/+1</button>
+    <button ng-click="reset()">Reset</button>
+    <button ng-click="stop()">Stop</button>
+    <label>Timer</label>
+    <input type="number" placeholder="Enter Time"/ ng-model="userTimer">
+    <!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controller.js"></script>
+</body>
+
+</html>
